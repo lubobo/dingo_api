@@ -13,3 +13,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+$api=app('Dingo\Api\Routing\Router');
+$api->version('v1',function ($api){
+    $api->get('/getHello',[
+        'uses'=>'App\Http\Controllers\Api\ApiController@getHello',
+        'as'=>'getHello'
+    ]);
+});

@@ -58,7 +58,7 @@ return [
     |
     */
 
-    'prefix' => env('API_PREFIX', api),
+    'prefix' => env('API_PREFIX', "api"),
 
     /*
     |--------------------------------------------------------------------------
@@ -70,7 +70,7 @@ return [
     |
     */
 
-    'domain' => env('API_DOMAIN', api.dingo_api.com),
+    'domain' => env('API_DOMAIN', "api.dingo_api.com"),
 
     /*
     |--------------------------------------------------------------------------
